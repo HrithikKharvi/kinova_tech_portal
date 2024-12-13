@@ -9,4 +9,8 @@ function loadHTML(fileName, componentID) {
         });
 }
 
-loadHTML("navbar/navbar.html", "page-navbar");
+document.addEventListener("DOMContentLoaded", function () {
+    loadHTML("components/navbar/navbar.html", "page-navbar");
+    loadHTML("components/aboutUs/aboutUs.html", "about-us");
+    loadHTML("components/whatwedo/whatwedo.html", "whatwedoAsCompany");
+});

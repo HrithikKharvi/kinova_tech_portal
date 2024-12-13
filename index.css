@@ -1,6 +1,61 @@
-header{
-    width:75%;
-    border:1px solid black;
+*{
+    background-color: transparent;
+}
+body{
+    background-color: #fff;
+    padding:2%;
+}
+.page-header{
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    background-color:#D9EAFD;
+    color: white;
+    border-radius:15px;
+}
+
+.collapseContainer{
+    visibility: collapse;
+}
+.collapser{
+    cursor: pointer;
+}
+
+.descriptionOnDevs{
+    display: flex;
+    justify-content: space-around;
+}
+.descriptionOnDevs div{
+    width: 45%;
+}
+
+#about-us {
     display: flex;
     justify-content: center;
+    margin: 20px;
+}
+
+#about-us div {
+    width: 50%;
+}
+
+@media (max-width: 992px) {
+    #about-us {
+        flex-direction: column-reverse;
+    }
+
+    #about-us div {
+        width: 90%;
+    }
+
+    .descriptionOnDevs {
+        flex-direction: column-reverse;
+    }
+
+    .descriptionOnDevs div {
+        width: 90%;
+        height:50%;
+    }
 }
