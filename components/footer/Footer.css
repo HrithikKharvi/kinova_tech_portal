@@ -1,0 +1,41 @@
+.footerContainer{
+    background-color: black;
+    color: white;
+    padding:2%;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    padding:4%;
+    width:95%;
+    height:50vh;
+}
+
+.footerContent > div{
+    width:40%;
+}
+
+.footerHeader{
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+
+.footerContainer a{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:992px) {
+    .footerDetails{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerContent>div{
+        font-size: 10px;
+    }
+}
+

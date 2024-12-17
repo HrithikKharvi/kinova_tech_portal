@@ -1,0 +1,43 @@
+#page-navbar{
+position:absolute;
+top:0;
+left:0;
+width: 100%;
+background-color: rgb(255, 255, 88);
+border-bottom: .5px solid gray;
+}
+
+.companyDescription{
+    margin-top:2%;
+    width:80%;
+    font-size: 12px;
+}
+
+#landingPageContent{
+    padding:2%;
+    margin-top: 5%;
+    padding-left:5%;
+    height: 50vh;
+    background-color: rgb(255, 255, 88);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.welcomeNote{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+@media (max-width:1200px){
+    #landingPageContent{
+        height:50vh;
+        margin-top: 6px;
+    }
+
+    .welcomeNote{
+        font-size:20px;
+    }
+}
