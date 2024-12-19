@@ -1,34 +1,37 @@
 #aboutUsContainer{
+    font-size:14px;
+    padding:2%;
     display: flex;
     justify-content: space-around;
-    height:40vh;
+    min-height:40vh;
+    height:auto;
 }
 .aboutusHeader{
     height: 30vh;
-    font-size: 40px;
+    font-size: 35px;
 }
 .aboutUsText{
     height: auto;
-    width:40%;
+    width:60%;
 }
-/* #aboutUsContainer div{
-    width: 40%;
-    height: 80%;
-} */
-
 @media (max-width:992px){
 
     .aboutusHeader {
-            height: 30vh;
-            font-size: 20px;
+            font-size: 16px;
+            width:20%;
     }
     
     #aboutUsContainer {
+            font-size:8px;
             align-items: center;
-            height:40vh;
-            padding: 2%;
+            min-height: 20vh;
+            height: auto;
+            padding: 4%;
         }
-    #aboutUsContainer div{
-        width:40%;
+    .aboutUsText{
+        justify-content: start;
+        width:70%;
+        padding-top:0;
+        height:auto;
     }
 }

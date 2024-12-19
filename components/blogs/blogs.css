@@ -1,0 +1,73 @@
+.blogsContainer{
+background-color: #EAE7DC;
+min-height: 70vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    height:60vh;
+    color:#2A1B3D;
+    border-radius: 10px;
+    background-color: #8E8D8A;
+}
+.blogContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+    height:auto;
+}
+
+.blogsHeader, .blogContent{
+    background-color: transparent;
+}
+
+.ourServicesContent, .contentPage{
+    display: flex;
+}
+.contentPage{
+    margin:2%;
+    width:100%;
+    justify-content: space-around;
+}
+
+.blogsHeader{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+@media (max-width:992px) {
+    .blogsContainer{
+        min-height:50vh;
+        height:auto;
+        padding:4%;
+    }
+    .service {
+            font-size: 14px;
+            width: 40%;
+            height: 40vh;
+            border-radius: 10px;
+            background-color: rgba(168, 168, 168, 0.603);
+        }
+}
+
+@media (max-width:662px) {
+    .blogsContainer {
+        min-height: 40vh;
+        height:auto;
+    }
+
+    .service {
+        font-size: 10px;
+        width: 40%;
+        height: 20vh;
+        border-radius: 10px;
+        background-color: rgba(168, 168, 168, 0.603);
+    }
+}
