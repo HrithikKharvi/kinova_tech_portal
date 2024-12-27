@@ -1,9 +1,8 @@
 #aboutUsContainer{
-    font-size:14px;
     padding:2%;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    min-height:40vh;
     height:auto;
 }
 .aboutusHeader{
@@ -17,21 +16,15 @@
 @media (max-width:992px){
 
     .aboutusHeader {
-            font-size: 16px;
+            font-size: 12px;
             width:20%;
+            height: 10vh;
     }
     
     #aboutUsContainer {
-            font-size:8px;
             align-items: center;
             min-height: 20vh;
             height: auto;
             padding: 4%;
         }
-    .aboutUsText{
-        justify-content: start;
-        width:70%;
-        padding-top:0;
-        height:auto;
-    }
 }

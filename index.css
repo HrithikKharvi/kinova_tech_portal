@@ -12,9 +12,28 @@ body{
     background-color: #fff;
 }
 
+.containerMinHeight{
+    min-height:100vh;
+}
+
+.pageHeadLine{
+    font-size:20px;
+    letter-spacing: 10px;
+    padding-bottom: 5%;
+}
+
+.pageContainer{
+    padding:4%;
+    padding-top:10%;
+    padding-bottom:20%;
+}
+
+.paragraphContent{
+    font-size:14px;
+}
+
 
 #whatwedoAsCompany{
-    padding:4%;
     background-color: #EBE9E1;
     display: flex;
     justify-content: center;
@@ -37,6 +56,12 @@ body{
 
 
 @media (max-width: 992px) {
+    .containerMinHeight {
+            min-height: 60vh;
+        }
+    .paragraphContent {
+            font-size: 4px;
+    }
     #about-us {
         min-height: 40vh;
     }
