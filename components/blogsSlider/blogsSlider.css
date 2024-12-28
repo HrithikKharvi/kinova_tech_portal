@@ -6,6 +6,7 @@
     width:20%;
     height:20vh;
     top: 40vh;
+    color:rgba(0, 0, 0, 0.233);
     font-size:30px;
     background-color: rgba(255, 255, 255, 0.212);
     cursor: pointer;
@@ -62,8 +63,43 @@
 }
 
 
-@media (max-width:800px){
+@media (max-width:800px) {
     #rightSlider{
         left:85%;
+    }
+
+    .slider{
+        font-size:30px;
+    }
+    .slidContents{
+        top:5vh;
+        left:5%;
+        height: 60vh;
+    }
+
+    .slideImage{
+        width:80%;
+        left:10%;
+        min-height:40vh;
+    }
+
+    @keyframes slideFromRight {
+        from {
+            left: 60%;
+        }
+
+        to {
+            left: 10%;
+        }
+    }
+
+    @keyframes slideFromLeft {
+        from {
+            left: -100px;
+        }
+
+        to {
+            left: 10%;
+        }
     }
 }
