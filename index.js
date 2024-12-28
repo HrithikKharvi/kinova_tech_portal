@@ -7,4 +7,5 @@ document.addEventListener("DOMContentLoaded", function () {
     loadHTML("components/blogs/blogs.html", "blogs", () => loadJs("components/blogs/blogs.js"));
     loadHTML("components/howwework/howwework.html", "howwework", () => loadJs("components/howwework/howwework.js"));
     loadHTML("components/whatwedo/whatwedo.html", "whatwedoAsCompany", () => loadJs("components/whatwedo/whatwedo.js"));
+    loadHTML("components/blogsSlider/blogsSlider.html", "blogsSlider", () => loadJs("components/blogsSlider/blogsSlider.js"));
 });
