@@ -1,6 +1,6 @@
 .howweworkContainer {
     background-color: #b7e4c7;
-    min-height: 120vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

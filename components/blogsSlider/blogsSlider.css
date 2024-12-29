@@ -1,15 +1,19 @@
 #blogsContainerInner{
     box-sizing: border-box;
+    background-color:#FFFDEC
 }
 
 .slider{
-    width:20%;
-    height:20vh;
+    padding:5px;
+    padding-top:0;
+    padding-bottom: 0;
     top: 40vh;
     color:rgba(0, 0, 0, 0.233);
     font-size:30px;
     background-color: rgba(255, 255, 255, 0.212);
     cursor: pointer;
+    border:0.03px solid rgba(0, 0, 0, 0.185);
+    border-radius: 50%;
 }
 
 #leftSlider{
@@ -26,12 +30,13 @@
 .slidContents{
     box-sizing: border-box;
     position: relative;
-    left:5%;
-    top:2vh;
+    left:7%;
+    top:0vh;
     height: 80vh;
-    width:85%;
+    width:80%;
 }
 .slideImage{
+    background-color: white;
     height:auto;
     min-height: 60vh;
     width:70%;
@@ -39,7 +44,40 @@
     top:10vh;
     left:20%;
     text-align: center;
-    box-shadow: 0px 6px 15px 0.10px black;
+    vertical-align: middle;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 21px 26px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 20px 21px 26px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 20px 21px 26px -8px rgba(0, 0, 0, 0.75);    display: grid;
+    grid-template-rows: 88% 12%;
+    box-sizing: border-box;
+}
+
+.blogSampleImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 10px 10px 0px 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+}
+
+.viewMoreBar{
+    background-color: #161515ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+        -webkit-border-radius: 0px 0px 10px 10px;
+        -moz-border-radius: 0px 0px 10px 10px;
+}
+
+.viewMoreBar a{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;    
 }
 
 @keyframes slideFromRight {
@@ -65,7 +103,7 @@
 
 @media (max-width:800px) {
     #rightSlider{
-        left:85%;
+        left:80%;
     }
 
     .slider{
@@ -73,8 +111,9 @@
     }
     .slidContents{
         top:5vh;
-        left:5%;
+        left:15%;
         height: 60vh;
+        width:70%;
     }
 
     .slideImage{

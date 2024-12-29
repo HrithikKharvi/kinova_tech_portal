@@ -12,28 +12,28 @@ const blogsContents = [
         "blog": {
             "id" : "blog:1",
             "description": "Loading Blog1....",
-            "url": ""
+            "url": "https://en.wikipedia.org/wiki/Web_development"
         }
     },
     {
         "blog": {
             "id" : "blog:2",
             "description": "Loading Blog2....",
-            "url": ""
+            "url": "https://en.wikipedia.org/wiki/Web_development"
         }
     },
     {
         "blog": {
             "id" : "blog:3",
             "description": "Loading Blog3....",
-            "url": ""
+            "url": "https://en.wikipedia.org/wiki/Web_development"
         }
     },
     {
         "blog": {
             "id" : "blog:4",
             "description": "Loading Blog4....",
-            "url": ""
+            "url": "https://en.wikipedia.org/wiki/Web_development"
         }
     }
 ]
@@ -49,7 +49,6 @@ function createSlideImage(content) {
 
     let contentDiv = document.createElement("div");
     contentDiv.id = id;
-    contentDiv.innerHTML = description;
     contentDiv.classList.add("slideImage");
 
     if (!id.includes("1")) {
@@ -58,6 +57,25 @@ function createSlideImage(content) {
         sliderButton[0].style.visibility = "hidden";
         if (blogsContents.length <= 1) sliderButton[1].style.visibility = "hidden";   
     }
+
+    const blogSampleImage = document.createElement("div");
+    const viewMoreBar = document.createElement("div");
+    const viewMoreButtonLink = document.createElement("a");
+
+    blogSampleImage.classList.add("blogSampleImage");
+    contentDiv.style.backgroundImage = "url('statics/Untitled.png')"
+    contentDiv.style.backgroundSize = "cover";
+    contentDiv.style.backgroundRepeat = "no-repeat"
+    contentDiv.style.backgroundPosition = "center"
+    viewMoreBar.classList.add("viewMoreBar");
+    viewMoreButtonLink.href = blog["url"];
+    viewMoreButtonLink.target = "_blank";
+    viewMoreButtonLink.classList.add("viewMoreButtonLink");
+    viewMoreButtonLink.innerHTML = "Read....";
+
+    viewMoreBar.appendChild(viewMoreButtonLink);
+    contentDiv.appendChild(blogSampleImage);
+    contentDiv.appendChild(viewMoreBar);
 
     return contentDiv;
 
