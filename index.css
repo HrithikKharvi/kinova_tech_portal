@@ -9,9 +9,33 @@
     background-color: transparent;
 }
 body{
+    width:100%;
+    max-width: 100%;
+    box-sizing: border-box;
     background-color: #fff;
 }
 
+.componentHeader{
+    padding:5%;
+    padding-bottom: 2%;
+    width:30%;
+    background-color: white;
+    border-bottom:0.5px solid rgba(0, 0, 0, 0.329);
+}
+
+/*
+common stylings
+*/
+
+.font-bg{
+    font-size: 25px;
+}
+.font-mid{
+    font-size: 18px;
+}
+.font-sm{
+    font-size:10px;
+}
 .containerMinHeight{
     min-height:100vh;
 }
@@ -40,6 +64,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding:2%;
 }
 
 #about-us{
@@ -57,6 +82,21 @@ body{
 
 
 @media (max-width: 992px) {
+    .font-sm{
+        font-size: 6px;
+    }
+    .font-mid {
+        font-size: 12px;
+    }
+
+    .font-bg{
+        font-size: 18px;
+    }
+
+    .componentHeader{
+        width:50%;
+        font-size:8px;
+    }
     .containerMinHeight {
             min-height: 80vh;
         }
