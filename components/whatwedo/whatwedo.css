@@ -29,7 +29,12 @@
 
 @media (max-width: 600px) {
 
-
+    .card {
+        border-radius: 0;
+        min-height: 40vh;
+        height: auto;
+        padding: 2%;
+    }
     .aboutDevelopments {
         width:80%;
         font-size: 12px;
