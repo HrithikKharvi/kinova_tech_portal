@@ -1,0 +1,61 @@
+.contactUsCotainer{
+    padding-top:10%;
+    padding-bottom:10%;
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    height:auto;
+}
+
+.sendMessageContainer{
+    width:55%;
+    min-height:80vh;
+    background-color: rgb(27, 27, 27);
+    border-radius:10px;
+    padding:2%;
+    color: white;
+    height: auto;
+}
+table{
+    width:100%;
+}
+table td{
+    padding:1%;
+}
+.inputs {
+    background-color: rgb(59, 59, 59);
+    border:none;
+    width:90%;
+    border-radius: 5px;
+    height:8vh;
+    color:white;
+    padding: 2%;
+}
+
+textarea{
+    height:25vh;
+    color: white;
+    padding: 2%;
+    width: 95%;
+    background-color: rgb(59, 59, 59);;
+}
+.sendMessage{
+    background-color: rgba(255, 255, 0, 0.767);
+    width:95%;
+    border:none;
+    padding:4%;
+    text-align: center;
+    border-radius: 10px;
+}
+th td{
+    font-size: 30px;
+    letter-spacing: 4%;
+}
+
+td{
+    width:50%;
+}
+
+.contactUsContainer{
+    width:40%;
+}

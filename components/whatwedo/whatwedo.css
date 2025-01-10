@@ -3,13 +3,15 @@
     justify-content: space-around;
 }
 #whatwedoDesctiption{
-    font-size:12px;
+    font-size:12px; 
 }
 
 .descriptionOnDevs div {
     width: 45%;
 }
-
+.whatwedoheader{
+    width:90%;
+}
 .card{
     border-radius: 0;
     min-height:60vh;
@@ -18,7 +20,7 @@
 }
 
 .aboutDevelopments{
-    width:100%;
+    width:90%;
     font-size:10px;
 }
 
