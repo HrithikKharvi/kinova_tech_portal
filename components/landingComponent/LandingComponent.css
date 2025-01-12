@@ -14,9 +14,8 @@ border-bottom: .5px solid gray;
 }
 
 #landingPageContent{
-    padding:2%;
     margin-top: 5%;
-    padding-left:5%;
+    padding-left:7%;
     height:auto;
     background-color: rgb(255, 255, 88);
     display: flex;

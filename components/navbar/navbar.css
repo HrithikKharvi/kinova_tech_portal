@@ -1,3 +1,8 @@
+.navbar{
+    padding-left: 5%;
+    padding-right:5%;
+}
+
 @media (max-width:1200px){
     .navbar-nav{
         font-size:12px;
